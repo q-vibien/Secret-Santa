@@ -1,4 +1,4 @@
-// Ce composant affiche la liste des assignments
+
 // Il prend en props le tableau d'assignments
 export function AssignmentDisplay({ assignments }) {
   return (
