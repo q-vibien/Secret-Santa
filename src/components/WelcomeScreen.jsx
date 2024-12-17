@@ -9,7 +9,7 @@ export function WelcomeScreen({ onStart }) {
         Bienvenue dans l'application Secret Santa ! Organisez facilement votre
         échange de cadeaux entre amis ou collègues.
       </p>
-      <button onClick={onStart} className="button text-lg px-8 py-3">
+      <button onClick={onStart} className="button text-lg px-8 py-3 bg-red-500">
         Commencer !
       </button>
     </div>
