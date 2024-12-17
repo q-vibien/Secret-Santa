@@ -10,7 +10,7 @@ export function WelcomeScreen({ onStart }) {
         échange de cadeaux entre amis ou collègues.
       </p>
       <button onClick={onStart} className="button text-lg px-8 py-3">
-        Commencer
+        Commencer !
       </button>
     </div>
   );
