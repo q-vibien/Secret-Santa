@@ -24,7 +24,7 @@ export function ParticipantInput({
 
   return (
     <div className="flex flex-col justify-center items-center space-y-4">
-      <img src="./Accueil.png" alt="accueil" />
+      <img src="./Participants.png" alt="Participants" />
 
       <h1 className="flex justify-center items-center mb-10 text-3xl font-title text-primary">
         Distribuer vos cadeaux

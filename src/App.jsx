@@ -73,10 +73,10 @@ export default function App() {
         )}
         {currentScreen === "assignments" && (
           <>
-            
+
             <AssignmentDisplay assignments={assignments} />
-            <div className="mt-6">
-              <button className="button w-full" onClick={resetApp}>
+            <div className="flex justify-center mt-6">
+              <button className="button bg-primary font-title text-white pt-2 pr-16  pb-2 pl-16 rounded-3xl"  onClick={resetApp}>
                 Recommencer
               </button>
             </div>
