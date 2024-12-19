@@ -53,29 +53,24 @@ export default function App() {
   return (
     <div className="container mx-auto p-4">
       <div>
-        // affiche l'écran en fonction de l'état de l'application // WELCOME
-        {currentScreen === "welcome" && (
+          {currentScreen === "welcome" && (
           <WelcomeScreen onStart={() => setCurrentScreen("input")} />
         )}
-        // INPUT
         {currentScreen === "input" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Ajoutez les participants
-            </h2>
+           
             <ParticipantInput
               onAddParticipant={addParticipant}
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
             <div className="mt-6">
-              <button className="button w-full" onClick={distributeGifts}>
+              <button className="button bg-[#DA4646] w-full" onClick={distributeGifts}>
                 Distribuer les cadeaux
               </button>
             </div>
           </>
         )}
-        // ASSIGNMENTS
         {currentScreen === "assignments" && (
           <>
             <h2 className="text-2xl font-bold mb-6 text-center">
