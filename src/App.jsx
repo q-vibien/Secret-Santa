@@ -51,7 +51,7 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto ">
       <div>
           {currentScreen === "welcome" && (
           <WelcomeScreen onStart={() => setCurrentScreen("input")} />
@@ -64,8 +64,8 @@ export default function App() {
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
-            <div className="mt-6">
-              <button className="button bg-[#DA4646] w-full" onClick={distributeGifts}>
+            <div className="flex justify-center mt-6">
+              <button className="button pt-2 pr-16  pb-2 pl-16 font-title text-white bg-primary rounded-3xl " onClick={distributeGifts}>
                 Distribuer les cadeaux
               </button>
             </div>
@@ -73,9 +73,7 @@ export default function App() {
         )}
         {currentScreen === "assignments" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Attributions des cadeaux
-            </h2>
+            
             <AssignmentDisplay assignments={assignments} />
             <div className="mt-6">
               <button className="button w-full" onClick={resetApp}>
