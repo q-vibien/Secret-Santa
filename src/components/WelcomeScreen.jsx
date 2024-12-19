@@ -6,7 +6,7 @@ export function WelcomeScreen({ onStart }) {
     <div className="flex flex-col justify-center items-center text-center space-y-6 h-screen">
       <div
         className="bg-white pt-10 pb-10 rounded-3xl max-w-md w-full mx-auto"
-        style={{ width: '391px' }}
+        style={{ width: '391px' }} //pour l'ecran PC
       >
         <img src="./Accueil.png" alt="accueil" className="mx-auto max-w-full h-auto mb-4" />
         <h1 className="mb-52 text-4xl font-bold text-primary font-title">Secret Santa</h1>
